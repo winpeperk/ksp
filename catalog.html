@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebooks</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h2 class="logo">Ebooks</h2>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Главная</a></li>
+                    <li><a class="nav-link" href="catalog.html">Каталог книг</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <h1>
+            Каталог книг
+        </h1>
+        <select class="genre-filter">
+            <option value="all">Все жанры</option>
+            <option value="fantasy">Фэнтези</option>
+            <option value="classic">Классика</option>
+            <option value="dystopia">Антиутопия</option>
+            <option value="horror">Ужасы</option>
+        </select>
+        <section class="cards">
+            <div class="book-card" data-genre="fantasy">
+                <img src="./images/harry_potter.png"
+                     title="Гарри Поттер"
+                     width="200"
+                     height="300"/>
+                <h2>
+                    <a class="product-link" href="./pages/harry_potter.html">
+                        Гарри Поттер и философский камень
+                    </a>
+                </h2>
+                <p class="product-description">Автор: Дж. К. Роулинг</p>
+                <p class="product-description">Год: 1997</p>
+                <p class="product-price">Цена: 500 ₽</p>
+                <button class="add-to-cart" 
+                        data-name="Гарри Поттер и философский камень"
+                        data-price="500">
+                    Добавить в корзину
+                </button>
+            </div>
+            <div class="book-card" data-genre="classic">
+                <img src="./images/master_and_margarita.png"
+                     alt="Мастер и Маргарита" 
+                     title="Мастер и Маргарита"
+                     width="200"
+                     height="300">
+                <h2>
+                    <a class="product-link" href="./pages/master_and_margarita.html">
+                        Мастер и Маргарита
+                    </a>
+                </h2>
+                <p class="product-description">Автор: Михаил Булгаков</p>
+                <p class="product-description">Год: 1967</p>
+                <p class="product-price">Цена: 150 ₽</p>
+                <button class="add-to-cart" 
+                        data-name="Мастер и Маргарита"
+                        data-price="150">
+                    Добавить в корзину
+                </button>
+            </div>
+            <div class="book-card" data-genre="dystopia">
+                <img src="images/1984.png"
+                     alt="1984" 
+                     title="1984"
+                     width="200"
+                     height="300">
+                <h2>
+                    <a class="product-link" href="./pages/1984.html">
+                        1984
+                    </a>
+                </h2>
+                <p class="product-description">Автор: Джордж Оруэлл</p>
+                <p class="product-description">Год: 1949</p>
+                <p class="product-price">Цена: 300 ₽</p>
+                <button class="add-to-cart" 
+                        data-name="1984"
+                        data-price="300">
+                    Добавить в корзину
+                </button>
+            </div>
+            <div class="book-card" data-genre="horror">
+                <img src="images/pet_sematary.png"
+                     alt="Кладбище домашних животных" 
+                     title="Кладбище домашних животных"
+                     width="200"
+                     height="300">
+                <h2>
+                    <a class="product-link" href="./pages/pet_sematary.html">
+                        Кладбище домашних животных
+                    </a>
+                </h2>
+                <p class="product-description">Автор: Стивен Кинг</p>
+                <p class="product-description">Год: 1983</p>
+                <p class="product-price">Цена: 600 ₽</p>
+                <button class="add-to-cart" 
+                        data-name="Кладбище домашних животных"
+                        data-price="600">
+                    Добавить в корзину
+                </button>
+            </div>
+        </section>
+        <div class="cart-modal">
+            <h2>Корзина</h2>
+            <div class="cart-items"></div>
+            <h3>Общая сумма: <span class="cart-total">0</span> ₽</h3>
+            <button class="pay-btn">Оплатить</button>
+            <button class="clear-btn">Очистить корзину</button>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Ebooks. Все права защищены.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

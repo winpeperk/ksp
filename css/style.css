@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(235, 219, 198);
+    font-family: Garamond;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: darkred;
+}
+
+.product-details {
+    display: flex;
+    gap: 100px;
+    padding: 0 300px;
+}
+
+.product-heading {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-link {
+    color: darkred;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.product-link:hover {
+    color: black;
+}
+
+.product-description {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product-full-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.product-characteristics {
+    list-style-image: url("../images/open-book.svg");
+    font-style: italic;
+    line-height: 20px;
+    text-align: left;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-price {
+    color: darkred;
+    font-weight: 600;
+}
+
+.genre-filter, .add-to-cart {
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    background-color: rgb(245, 235, 220);
+}
+
+.add-to-cart:hover:not(:disabled) {
+    background-color: darkred;
+    border-color: rgb(245, 235, 220);
+    color: rgb(245, 235, 220);
+}
+
+.cart-modal{
+    margin: 10px auto;
+    padding: 10px;
+    width: 500px;
+    border-radius: 6px;
+    border: solid gray 1px;
+    background-color: rgb(245, 235, 220);
+}
+
+.cart-items p{
+    margin: 5px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.remove-item {
+    font-size: 30px;
+    color: darkred;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    color: black;
+}
+
+.pay-btn, .clear-btn{
+    margin: 5px;
+    padding: 8px 16px;
+    color: rgb(245, 235, 220);
+}
+
+.pay-btn{
+    background-color: darkgreen;
+}
+
+.clear-btn{
+    background-color: darkred;
+}
+
+button, select {
+    font-family: Garamond;
+    font-size: 16px;
+    cursor: pointer;
+    border: solid gray 1px;
+    border-radius: 6px;
+    font-size: 16px;
+}
